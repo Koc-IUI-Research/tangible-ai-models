@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Piko</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="./libraries/reveal/reveal.css">
+		<link rel="stylesheet" href="./libraries/reveal/theme/moon.css" id="theme">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h2 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h2 {
+				color: #222;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-background="#00ffff">
+					<img src="./assets/1.jpg" alt="">
+					<p>Yapay Zeka İnteraktif Sunum</p>
+				</section>
+
+				<section>
+					<section data-background="#ff0000">
+						<h2>data-background: #ff0000 - vertical</h2>
+					</section>
+					<section data-background="rgba(0, 0, 0, 0.2)">
+						<h2>data-background: rgba(0, 0, 0, 0.2)</h2>
+					</section>
+					<section data-background="salmon">
+						<h2>data-background: salmon</h2>
+					</section>
+				</section>
+
+				<section data-background-transition="slide" data-background="./assets/1.jpg">
+					<h2>Background image</h2>
+				</section>
+
+				<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
+					<h2>Video background</h2>
+				</section>
+
+				<section data-background-iframe="./linear-regression/index.html"></section>
+
+				<section data-background-iframe="https://playground.tensorflow.org/">
+					<h2>Iframe background</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="./libraries/reveal/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options:
+			// https://revealjs.revealjs.com/config/
+			Reveal.initialize({
+				center: true,
+				transition: 'linear',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
+	</body>
+</html>
