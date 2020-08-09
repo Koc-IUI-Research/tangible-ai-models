@@ -1,0 +1,37 @@
+.Dialogue{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 50px;
+    grid-template-areas: "image top-right"
+    "image bottom-right";
+}
+
+.Image{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: black;
+    grid-area: image;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+    left:-150px;
+    align-self: center;
+}
+
+.Text{
+    grid-area: bottom-right;
+    font-size: 20px;
+    position: relative;
+    top:50px;
+    left:50px
+}
+
+.Character{
+    grid-area: top-right;
+    position: relative;
+    top:20px;
+    right:-250px
+}

@@ -10,6 +10,7 @@
 
 		<link rel="stylesheet" href="./libraries/reveal/reveal.css">
 		<link rel="stylesheet" href="./libraries/reveal/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="style.css">
 		<style type="text/css" media="screen">
 			.slides section.has-dark-background,
 			.slides section.has-dark-background h2 {
@@ -27,12 +28,14 @@
 		<div class="reveal">
 
 			<div class="slides">
-
 				<section data-background="#00ffff">
 					<img src="./assets/1.jpg" alt="">
 					<p>Yapay Zeka İnteraktif Sunum</p>
 				</section>
-
+				<section data-background="#000000">
+					<img src="./assets/1.jpg" alt="">
+					<p>Yapay Zeka İnteraktif Sunum</p>
+				</section>
 				<section>
 					<section data-background="#ff0000">
 						<h2>data-background: #ff0000 - vertical</h2>
@@ -44,14 +47,22 @@
 						<h2>data-background: salmon</h2>
 					</section>
 				</section>
+				<section>						
+					<section data-background-transition="slide" data-background="./assets/indir.gif">
+						<h2>Lineer Problemlere Giriş</h2>
+					</section>
+					<section data-background="#081f5b">
+						<div class = "Dialogue">
+							<img class = "Image" src="./assets/dataset.png" alt="">
+							<p class = "Text">Piko:Değerinden fazla para ödememek adına aklındaki ev boyutu için ideal bir fiyat belirlemek önemlidir. Bunu sana sağladığım grafiklerle nasıl hesaplarız inceleyelim. Öncelikle lütfen yandaki ev fiyatları/m2 grafiğini incele. </p>
+							<img class = "Character" src="./assets/alexa.png" alt="">
+						</div>
+					</section>
 
-				<section data-background-transition="slide" data-background="./assets/1.jpg">
-					<h2>Background image</h2>
 				</section>
 
-				<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
-					<h2>Video background</h2>
-				</section>
+
+				
 
 				<section data-background-iframe="./linear-regression/index.html"></section>
 
@@ -67,15 +78,18 @@
 		<script>
 
 			// Full list of configuration options:
-			// https://revealjs.revealjs.com/config/
+			// https://revealjs.com/config/
 			Reveal.initialize({
 				center: true,
 				transition: 'linear',
-				// transitionSpeed: 'slow',
+				transitionSpeed: 'slow',
+				//disableLayout: true,
 				// backgroundTransition: 'slide'
 			});
 
 		</script>
-
+		<script src= "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"> </script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"  ></script>
+		<script src="app.js"></script>
 	</body>
 </html>
