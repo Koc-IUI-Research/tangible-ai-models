@@ -1,44 +1,48 @@
-.Dialogue{
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+html * {
+    font-family: 'Neucha', cursive;
+}
+
+.Dialogue {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-gap: 50px;
-    grid-template-areas: "image top-right"
-    "image bottom-right";
+    grid-template-areas: "image top-right" "image bottom-right";
 }
 
-.Image{
-    grid-column-start:1;
+.Image {
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-area: image;
     position: relative;
-    bottom:50px;
-    left:-0px;
-    width:150%;
-    height:50%;
+    bottom: 50px;
+    left: -0px;
+    width: 150%;
+    height: 50%;
     align-self: center;
 }
 
-.Text{
+.Text {
     grid-area: bottom-right;
     font-size: 20px;
     position: relative;
-    top:3px;
-    left:50px;
-    text-align: left;  
+    top: 3px;
+    left: 50px;
+    text-align: left;
     z-index: -10;
 }
 
-.Character{
+.Character {
     grid-area: top-right;
     position: relative;
-    top:20px;
-    right:30px;
+    top: 20px;
+    right: 30px;
 }
 
-.alberto{
+.alberto {
     position: absolute;
     z-index: 10;
     width: 50%;
@@ -47,19 +51,19 @@
     top: -15px;
 }
 
-span{
-    opacity:0;
+span {
+    opacity: 0;
     transform: translateY(50px);
     display: inline-block;
     transition: all 0.5s ease;
 }
 
-span.fade{
+span.fade {
     opacity: 1;
 }
 
-.btn{
-    opacity: 0; 
+.btn {
+    opacity: 0;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -72,40 +76,40 @@ span.fade{
     height: 50px;
 }
 
-.btn::before{
+.btn::before {
     background: #ff7675;
     transform: translate(-50% -50%) rotate(-45deg);
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
-    top:-250%;
+    top: -250%;
     left: 50%;
     z-index: -1;
     transition: all 0.6s ease;
 }
 
-#btn1::before{
+#btn1::before {
     width: 100%;
     height: 0;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-#btn1:hover::before{
+#btn1:hover::before {
     height: 380%;
 }
 
-.birikim{
-    grid-column-start:1;
+.birikim {
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-area: image;
     position: relative;
-    bottom:150px;
-    left:-0px;
-    left:-175px;
+    bottom: 150px;
+    left: -0px;
+    left: -175px;
     width: 800px;
-    height:400px;
+    height: 400px;
     align-self: center;
 }
