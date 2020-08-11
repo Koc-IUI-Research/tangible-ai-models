@@ -1,81 +1,105 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>Piko</title>
+    <title>Piko</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="./libraries/reveal/reveal.css">
-		<link rel="stylesheet" href="./libraries/reveal/theme/moon.css" id="theme">
-		<style type="text/css" media="screen">
-			.slides section.has-dark-background,
-			.slides section.has-dark-background h2 {
-				color: #fff;
-			}
-			.slides section.has-light-background,
-			.slides section.has-light-background h2 {
-				color: #222;
-			}
-		</style>
-	</head>
+    <link rel="stylesheet" href="./libraries/reveal/reveal.css">
+    <link rel="stylesheet" href="./libraries/reveal/moon.css" id="theme">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://gramener.com/comicgen/dist/comicgen.min.css">
+    <script async src="https://gramener.com/comicgen/dist/comicgen.min.js"></script>
+    <style type="text/css" media="screen">
+        .slides section.has-dark-background,
+        .slides section.has-dark-background h2 {
+            color: #fff;
+        }
+        
+        .slides section.has-light-background,
+        .slides section.has-light-background h2 {
+            color: #222;
+        }
+    </style>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<div class="slides">
+        <div class="slides">
+            <section data-background="#e8eaf6">
+                <img src="./assets/1.jpg" alt="">
+                <p>Yapay Zeka İnteraktif Sunum</p>
+            </section>
+            <section>
+                <section data-background-transition="slide" data-background="./assets/indir.gif">
+                    <h2>Lineer Problemlere Giriş</h2>
+                </section>
+                <section id="1" data-background="#e8eaf6">
+                    <div class="Dialogue">
+                        <img class="Image" src="./assets/dataset.png" alt="">
+                        <p class="Text">Piko:Değerinden fazla para ödememek adına aklındaki ev boyutu için ideal bir fiyat belirlemek önemlidir. Bunu sana sağladığım grafiklerle nasıl hesaplarız inceleyelim. Öncelikle lütfen yandaki ev fiyatları/metrekare grafiğini incele.</p>
+                        <g class="comicgen" name="bean" angle="straight" emotion="curious" pose="handsfolded" x="5vw" y="-10vh" width="50vw" height="50vh"></g>
+                    </div>
+                </section>
+                <section id="2" data-background="#e8eaf6">
+                    <div class="Dialogue">
+                        <img id="image2" class="Image" src="./assets/dataset.png" alt="">
+                        <p class="Text" id="text2">Alberto: Bu grafik bana ne sağlıyor?</p>
+                        <img id="character2" class="Character" src="./assets/alexa.png" alt="">
+                        <img id="alberto2" class="alberto" src="./assets/alberto.png" alt="">
+                    </div>
+                </section>
+                <section id="3" data-background="#e8eaf6">
+                    <div class="Dialogue">
+                        <img id="image3" class="birikim" src="./assets/birikim.png" alt="">
+                        <p class="Text" id="text3">Piko: İdeal bir fiyat belirlemek için verinin sınırları içerisinde verilen bir ev boyutu girdisi için ortalama bir fiyat hesaplıyor olabilmemiz gerekiyor. Bunun için geliştirilmiş çeşitli matematiksel formüller ve yollar var, bu
+                            yolları incelemeden önce anlayışını kuvvetlendirmek adına grafikler ve koordinat sistemini hatırlayalım.</p>
+                        <img id="character3" class="Character" src="./assets/alexa.png" alt="">
+                        <img id="alberto3" class="alberto" src="./assets/alberto.png" alt="">
+                    </div>
+                </section>
+                <section id="4" data-background="#e8eaf6">
+                    <div class="Dialogue">
+                        <img id="image4" class="birikim" src="./assets/birikim.png" alt="">
+                        <p class="Text" id="text4">Piko: Eğer ay sayısını Y ile, birikimi X ile gösterirsek yukarıdaki grafiği <br> X = Y *200 <br> denklemi ile ifade edebiliriz. Fazla soyut kalmaması adına denklemi grafikteki değerlerle çözelim:
+                        </p>
+                        <img id="character4" class="Character" src="./assets/alexa.png" alt="">
+                        <img id="alberto4" class="alberto" src="./assets/alberto.png" alt="">
+                    </div>
+                </section>
+                <section id="5" data-background="#e8eaf6">
+                    <div class="Dialogue">
+                        <img id="image5" class="birikim" src="./assets/birikim.png" alt="">
+                        <p class="Text" id="text5">Alberto: Anlıyorum. Eğer veriyi bu şekilde bir denklem ile ifade edersek bize verilmeyen örnekleri tahmin etme şansımız olur! Tıpkı az önce bize verilmeyen 11. ayı tahmin ettiğimiz gibi.
+                        </p>
+                        <img id="character5" class="Character" src="./assets/alexa.png" alt="">
+                        <img id="alberto5" class="alberto" src="./assets/alberto.png" alt="">
+                    </div>
+                </section>
+                <section data-background-iframe="./dynamic-graphing/index.html"></section>
+            </section>
 
-				<section data-background="#00ffff">
-					<img src="./assets/1.jpg" alt="">
-					<p>Yapay Zeka İnteraktif Sunum</p>
-				</section>
+            <section data-background-iframe="./linear-regression/index.html"></section>
 
-				<section>
-					<section data-background="#ff0000">
-						<h2>data-background: #ff0000 - vertical</h2>
-					</section>
-					<section data-background="rgba(0, 0, 0, 0.2)">
-						<h2>data-background: rgba(0, 0, 0, 0.2)</h2>
-					</section>
-					<section data-background="salmon">
-						<h2>data-background: salmon</h2>
-					</section>
-				</section>
+            <section data-background-iframe="https://playground.tensorflow.org/">
+                <h2>Iframe background</h2>
+            </section>
 
-				<section data-background-transition="slide" data-background="./assets/1.jpg">
-					<h2>Background image</h2>
-				</section>
+        </div>
 
-				<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm">
-					<h2>Video background</h2>
-				</section>
+    </div>
 
-				<section data-background-iframe="./linear-regression/index.html"></section>
+    <script src="./libraries/reveal/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="app.js"></script>
 
-				<section data-background-iframe="https://playground.tensorflow.org/">
-					<h2>Iframe background</h2>
-				</section>
+</body>
 
-			</div>
-
-		</div>
-
-		<script src="./libraries/reveal/reveal.js"></script>
-		<script>
-
-			// Full list of configuration options:
-			// https://revealjs.revealjs.com/config/
-			Reveal.initialize({
-				center: true,
-				transition: 'linear',
-				// transitionSpeed: 'slow',
-				// backgroundTransition: 'slide'
-			});
-
-		</script>
-
-	</body>
 </html>
