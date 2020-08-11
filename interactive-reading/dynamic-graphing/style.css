@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: rgb(87,189,130);
+    background-color: rgb(147,147,147);
     position: relative;
     display: flex;
     transition: background-color 0.5s ease;
@@ -38,5 +38,6 @@ body{
     position: absolute;
     top:275px;
     font-size: 20px;
-    right:270px;
+    right:250px;
+    font-family: Roboto;
 }
