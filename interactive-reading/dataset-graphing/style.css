@@ -1,0 +1,43 @@
+
+
+body{
+    background-color: rgb(147,147,147);
+    position: relative;
+    display: flex;
+    transition: background-color 0.5s ease;
+    height: 100vh;
+}
+
+.equation{
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 50px;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor:pointer;
+}
+
+.equation input{
+    background: none;
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+    left:30px;
+    position: absolute;
+}
+
+#text{
+    position: absolute;
+    top:275px;
+    font-size: 20px;
+    right:250px;
+    font-family: Roboto;
+}
