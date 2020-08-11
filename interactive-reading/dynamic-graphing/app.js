@@ -61,27 +61,52 @@ window.onload = function(){
         let temp = input.split("");
         let xIndex = temp.indexOf("x");
         if(xIndex == -1){
-            console.log("0");
             return false;
         } 
         else if(temp.indexOf("+") != -1 && temp.indexOf("-") != -1){
-            console.log("1");
-            console.log("X position: " + xIndex);
             return false;
         } 
         else{
-            let xDigits = "";
-            let yDigits = "";
+            let xDigits = 0;
+            let yDigits = 0;
+            let isDecimal = false;
+            let decimalcounter = 0;
             for(let i = 0;i<xIndex;i++){
-                if(temp[i] >= '0' && temp[i] <'9') xDigits = xDigits + temp[i];
+                if(temp[i] == '.'){
+                    isDecimal = true;
+                    continue;
+                }
+                if((temp[i] >= '0' && temp[i] <'9') || isDecimal){
+                    if(isDecimal){
+                        decimalcounter++;
+                        xDigits += Number(temp[i]) * Math.pow(10,-decimalcounter);
+                        console.log("XDIGITS: "+ xDigits);
+                    }
+                    else{
+                        xDigits += Number(temp[i]);
+                    }
+                }
                 else{
                     console.log("112");
                     console.log(temp[i]);
                     return false;
                 } 
             }
+            isDecimal = false;
+            decimalcounter = 0;
             for(let i = xIndex+2;i<temp.length;i++){
-                if(temp[i] >= '0' && temp[i] <'9') yDigits = yDigits + temp[i];
+                if(temp[i] == '.'){
+                    isDecimal = true;
+                }
+                else if(temp[i] >= '0' && temp[i] <'9'){
+                    if(isDecimal){
+                        decimalcounter++;
+                        yDigits += Number(temp[i]) * Math.pow(10,-decimalcounter);
+                    }
+                    else{
+                        yDigits = yDigits + Number(temp[i]);
+                    }
+                } 
                 else{
                     console.log("12");
                     return false;
@@ -91,7 +116,7 @@ window.onload = function(){
             if (temp[xIndex+1] == '+') choice = 1;
             else choice = 0;
             if(xIndex == 0) xDigits = 1;
-            convertedInput = [Number(xDigits),choice,Number(yDigits)];
+            convertedInput = [xDigits,choice,yDigits];
             console.log("input"+ convertedInput);
             console.log("success");
             return true;
