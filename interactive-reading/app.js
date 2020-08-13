@@ -59,7 +59,7 @@ function ChangeText(elem,t){
 }
 
 
-t1.fromTo(image, 1.5, {x:"-150%"}, {x:"0%", ease: Power2.easeInOut})
+t1.fromTo(image, 1.5, {x:"-100%"}, {x:"0%", ease: Power2.easeInOut})
 .fromTo(text, 1.3, {y:"100%"}, {y:"0%",ease: Power2.easeInOut })
 .fromTo(character, 1.3, {x:"200%"}, {x:"0%", ease: Power2.easeInOut});
 t1.pause();
