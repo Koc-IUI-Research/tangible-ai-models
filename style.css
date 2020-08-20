@@ -23,6 +23,7 @@ html * {
     width: 125px;
     height: 125px;
 }
+
 .container{
     display:flex;
 }
@@ -71,6 +72,18 @@ html * {
     left: 0px;
     top: 150px;
 }
+.meryemPros{
+    position: absolute;
+    display: block;
+    left: -181px;
+    top: 185px;
+}
+.meryemDeskActivation{
+    position: absolute;
+    display: block;
+    left: -215px;
+    top: 150px;
+}
 .meryemStraight{
     position: absolute;
     display: inline-block;
@@ -96,6 +109,18 @@ html * {
     display: block;
     position: absolute;
     left: 20px;
+}
+.beanPros{
+    top: 395px;
+    display: block;
+    position: absolute;
+    left: 799px;
+}
+.beanDeskActivation{
+    top: 372px;
+    display: block;
+    position: absolute;
+    left: -195px;
 }
 .box{
     display: inline-block;
@@ -127,15 +152,31 @@ html * {
     left: 678px;
     top: 460px;
 }
+.tableActivation{
+    position: absolute;
+    left: 350px;
+    top: 460px;
+}
 .piko{
     position: absolute;
     left: 692px;
     top: 380px;
 }
+.pikoActivation{
+    position: absolute;
+    left: 480px;
+    top: 380px;
+}
 .sPrimary{
     font-size: 16px;
 }
+.activationImage{
+    width: 500px;
+    position: absolute;
+    right: -199px;
+    top: 137px;
 
+}
 #s1{
     left: 280px;
     top: 240px;
@@ -200,8 +241,159 @@ html * {
     left: 803px;
     top: 175px;
 }
-
-
-
-
-
+#s17{
+    left: 203px;
+    top: 71px;
+}
+#s18{
+    left: 146px;
+    top: 232px;
+}
+#s19{
+    left: 23px;
+    top: 160px;
+}
+#s20{
+    left: 149px;
+    top: 276px;
+}
+#s21{
+    left: 199px;
+    top: 41px;
+}
+#s22{
+    left: 12px;
+    top: 205px;
+}
+#s23{
+    left: 146px;
+    top: 355px;
+}
+#s24{
+    left: 199px;
+    top: 67px;
+}
+#s25{
+    left: 42px;
+    top: 235px;
+}
+#s26{
+    left: 206px;
+    top: 51px;
+}
+#s27{
+    left: 12px;
+    top: 235px;
+}
+#s28{
+    left: 146px;
+    top: 355px;
+}
+#s29{
+    left: 152px;
+    top: 236px;
+}
+#s30{
+    left: -14px;
+    top: 41px;
+}
+#s31{
+    left: 232px;
+    top: 158px;
+}
+#s32{
+    left: 149px;
+    top: 276px;
+}
+#s33{
+    left: 261px;
+    top: 22px;
+}
+#s34{
+    left: 12px;
+    top: 203px;
+}
+#s35{
+    left: 153px;
+    top: 320px;
+}
+#s36{
+    left: 261px;
+    top: 53px;
+}
+#s37{
+    left: 12px;
+    top: 203px;
+}
+#s38{
+    left: 153px;
+    top: 320px;
+}
+#s39{
+    left: 17px;
+    top: 190px;
+}
+#s40{
+    left: 146px;
+    top: 301px;
+}
+#s41{
+    left: 50px;
+    top: 53px;
+}
+#s42{
+    left: 408px;
+    top: 118px;
+}
+#s43{
+    left: 337px;
+    top: 309px;
+}
+#s44{
+    left: 592px;
+    top: 91px;
+}
+#s45{
+    left: 779px;
+    top: 199px;
+}
+#s46{
+    left: 370px;
+    top: 260px;
+}
+#s47{
+    left: 40px;
+    top: 150px;
+}
+#s48{
+    left: 370px;
+    top: 238px;
+}
+#s49{
+    left: -18px;
+    top: 52px;
+}
+#s50{
+    left: 420px;
+    top: 125px;
+}
+#s51{
+    left: 71px;
+    top: 267px;
+}
+#s52{
+    left: 367px;
+    top: 367px;
+}
+#s53{
+    left: 480px;
+    top: 60px;
+}
+#s54{
+    left: 70px;
+    top: 210px;
+}
+#s55{
+    left: 355px;
+    top: 320px;
+}
