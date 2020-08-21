@@ -1,2 +1,731 @@
-<p><a href="./interactive-reading/index.html">Interactive Reading Home Page</a></p>
-<p><a href="./interactive-reading/linear-regression/index.html">Linear Regression Example</a></p>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Piko</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="./libraries/reveal/reveal.css">
+    <link rel="stylesheet" href="./libraries/reveal/moon.css" id="theme">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://gramener.com/comicgen/dist/comicgen.min.css">
+    <script async src="https://gramener.com/comicgen/dist/comicgen.min.js"></script>
+    <style type="text/css" media="screen">
+        .slides section.has-dark-background,
+        .slides section.has-dark-background h2 {
+            color: #fff;
+        }
+        
+        .slides section.has-light-background,
+        .slides section.has-light-background h2 {
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="#e8eaf6">
+                <img id="img1" src="./assets/welcome.jpg" alt="Yapay Zeka İnteraktif Sunum Tanıtım Görseli">
+                <p>Yapay Sinir Ağları İnteraktif Sunum</p>
+            </section>
+            <section>
+                <section data-background="#e8eaf6">
+                        <div class="container " >
+                            <g class="comicgen" name="priyanuova" angle="straight" emotion="lookingright" pose="holdingbook" width="300" height="360"></g>
+                            <g class="comicgen" name="bean" angle="straight" emotion="hmm" pose="readingpaper" width="300" height="360"></g>
+                            <img id="img2" src="./assets/alexa.png" alt="piko">
+                        </div>
+                        <p>Karakterleri Tanıyalım</p>
+                </section>
+                <section data-background="#e8eaf6">
+                    
+                    <div class="Introduction">
+                        <g class="comicgen" name="priyanuova" angle="straight" emotion="happy" pose="holdingbook" width="500" height="600"></g>
+                        <div class="iText"><p class="Text">Meryem  meraklı, bilgili bir Felsefe öğretmenidir. Yeni şeyler öğrenmeye bayılır. Seni dikkatle dinler, en ince ayrıntılarına kadar durumu öğrenmeye çalışır. Son günlerde popüler olan sesli asistanlardan birine kendisi de sahiptir. Onun aklını karıştırmak için elinden geleni yapacaktır.</p></div>
+                    </div>
+                    
+                </section>
+                <section data-background="#e8eaf6">
+                    
+                    <div class="Introduction">
+                        <g class="comicgen" name="bean" angle="straight" emotion="blush" pose="pointingright" width="500" height="600"></g>
+                        <div class="iText"><p class="Text">Konuşan bir kahve bardağı mı? Her zaman yanı başımızda duran kahve bardağımız bu hikayede dile geliyor. </p></div>
+                    </div>
+                    
+                </section>
+                <section data-background="#e8eaf6">
+                    
+                    <div class="Introduction">
+                        <img id="img3" src="./assets/alexa.png" alt="piko">
+                        <div class="iText"><p class="Text">Merhaba, ben Piko size özel tasarlanmış sesli asistanım. Bana soracağın her soruyu dikkatle dinlerim ve en uygun cevabı sana iletmeye çalışırım. Bir sıkıntın olursa, dertleşmek istersen bana gelebilirsin. İnsan psikolojisinden çok iyi anlarım. </p></div>
+                    </div>
+                    
+                </section>
+            </section>
+            <section>
+                <section data-background-transition="slide" data-background="./assets/tenor.gif">
+                    <h2 style="color: black;"><b>Hikayemiz Başlıyor</b></h2>
+                </section>
+                <section data-background="#e8eaf6">
+                        <div class="meryemDesk">
+                            <g class="comicgen" name="priyanuova" angle="sitting" emotion="shocked" pose="sittingatdesk" width="500" height="600"></g>
+                        </div>
+                        <div class="beanDesk">
+                            <g class="comicgen" name="bean" angle="straight" emotion="shocked" pose="yuhoo" width="125" height="150"></g>
+                        </div>
+                        <div id="s1" class="box box2">
+                            <div class="evenboxinner"> Çekirdek</div>
+                            <p>Meryem</p>
+                        </div>
+                        <p class="sText">Meryem işten gelmiş bilgisayarıyla yeni bir ev arıyordu. Çekirdek her zamanki yerinde sehpanın kenarında bekliyordu. Piko ise o sıralarda uyku modundaydı. Meryem işini bıraktı ve mutfağa yönelip Çekirdek’ i yerinden aldı kahvesini doldurdu sehpanın kenarına bıraktı. Kendisi de sandalyesine oturdu. Canı sıkkın bir şekilde bardağa bakarken birden duyduğu sesle irkildi. Çekirdek’ in sesiydi bu.
+                        </p>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDesk">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="hmm" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDesk">
+                        <g class="comicgen" name="bean" angle="straight" emotion="curious" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s2" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Ev sahibimin evi satması nedeniyle yeni bir eve ihtiyacım var. Bu yüzden bir ev bakıyorum, sence bir ev alırken dikkat edilmesi gereken unsurlar nelerdir?</p>
+                    </div>
+                    <div id="s3" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Bir evin öncelikle senin için yeterli alana sahip olup olmaması önemlidir. Bunun yanında bütçene uygunluğu da kriterlerinden olmalıdır. Ayrıca alacağın evin iş ve ulaşım araçlarına uzaklığı da göz önüne almalısın. Her gün gideceğin işine evin ne kadar yakın olursa o kadar vakit kazanırsın.
+                        </p>
+                    </div>
+                    <div id="s4" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Teşekkür ederim Piko. Şimdi sırada uzun bir internet araması var. Umarım o kadar evden bir tane bulabilirim. Tabii bir de tek tek bunlar ile ilgili bilgi toplamak...
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDesk">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="afraid" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDesk">
+                        <g class="comicgen" name="bean" angle="straight" emotion="blush" pose="superperfect" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s10" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Şehirdeki tüm binaları ve konumlarını biliyorum. İnternetten sana uygun olacağını düşündüğüm birkaçını bulmak benim için kolay bir iş. Ben hemen gerekli verileri toplayarak dönüyorum.
+                        </p>
+                    </div>
+                    <div id="s5" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Meryem! İstemeyeceğin kadar ev buldum sana!
+                        </p>
+                    </div>
+                    <div id="s6" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Ben de bundan korkuyordum, hepsini nasıl inceleyeceğim?
+                        </p>
+                    </div>
+                    <div id="s7" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary"> Korkamana gerek yok. Bu verileri daha kolay incelemek için grafiklerle düzenleyebilirim.
+                        </p>
+                    </div>
+                </section>
+                <section data-background-iframe="https://leafletjs.com">
+                    <h1 style="color: black;">Leaflet için Place Holder Iframe</h1>
+                </section>
+            </section>
+            <section>
+                <section data-background-transition="slide" data-background="./assets/yapay.gif">
+                    <h2 style="color: white;"><b>Yapay Sinir Ağları</b></h2>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDesk">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="happy" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDesk">
+                        <g class="comicgen" name="bean" angle="straight" emotion="curious" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s8" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Şu ana kadar, evlerin metrekare ile fiyatlarını tahmin konusunda başarı ile ilerledik. Fakat evlerin Priya’ nın işine olan uzaklığı konusunda sorun yaşadık. Çözümden önce insanların günlük hayatlarında problemlerini nasıl çözdüklerini sormak istiyorum. 
+                        </p>
+                    </div>
+                    <div id="s9" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Biz insanlar problemleri akıl ve mantık ile çözeriz bu işlerlerse beyinde gerçekleşir. Fakat daha detaylı anlatmam gerekirse, tüm bu olaylar sinir sistemimizde nöronlar yardımıyla çözüme kavuşur. 
+                        </p>
+                    </div>                    
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemStraight">
+                        <g class="comicgen" name="priyanuova" angle="straight" emotion="lookingright" pose="holdingcoffee" width="500" height="600"></g>
+                    </div>
+                    <div class="projection">
+                        <img src="./assets/projection.png" alt="projection" >
+                        <div class="projectionImage">
+                            <img src="./assets/neuron.png" alt="nöron">
+                        </div>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s11" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Nöronlar,  duyu organları ile elde edilen verileri alıp elektriksel durumlarına göre değerlendirerek sonuçlar üretir. Tek bir işlemi yapmak için bile birçok nöron gerekmesidir. 
+                        </p>
+                    </div>
+                    <div id="s12" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Yapay sinir ağlarınını anlamak için öncelikle biyolojik nöronları anlamalıyız.    
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemStraight">
+                        <g class="comicgen" name="priyanuova" angle="straight" emotion="annoyed" pose="holdingcoffee" width="500" height="600"></g>
+                    </div>
+                    <div class="projection">
+                        <img src="./assets/projection.png" alt="projection" >
+                        <div class="projectionImage">
+                            <img src="./assets/neuron.png" alt="nöron">
+                        </div>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s13" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Neden öncelikle nöronları anlamalıyız ? İlk yapay sinir ağları tasarlanırken, daha yapay zeka kavramı ortaya çıkmamıştı! Yapay sinir ağları nörobilimcilerin insan beyninin çalışma ve karar verme aşamalarının şema edilmesi ve modellenmesi sonucu ortaya çıkmıştır.
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemStraight">
+                        <g class="comicgen" name="priyanuova" angle="straight" emotion="smile" pose="holdingcoffee" width="500" height="600"></g>
+                    </div>
+                    <div class="projection">
+                        <img src="./assets/projection.png" alt="projection" >
+                        <div class="projectionImage">
+                            <img src="./assets/mlayer.png" alt="Çok Katmanlı Yapı">
+                        </div>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id=img5 src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s14" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Biliyor muydunuz? Bende yapay sinir ağları kullanılarak üretildiğim için insanların günlük hayat problemleri ile  uyumlu çalışabiliyorum. Peki bu sistem nasıl çalışıyor?  
+                        </p>
+                    </div>
+                    <div id="s15" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary"> Bunları bir arada çalışan yapay nöronlara borçluyum. Her yapay nöronum üzerine gelen veriyi yine  onunla gelen eğitim sürecinden kalmış ağırlık ile toplar ve aktivasyon fonksiyonuna girer ve fonksiyonun sonucuna göre yeni veri oluşturup sonraki katmana iletir.     
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemStraight">
+                        <g class="comicgen" name="priyanuova" angle="straight" emotion="smile" pose="holdingcoffee" width="500" height="600"></g>
+                    </div>
+                    <div class="projection">
+                        <img src="./assets/projection.png" alt="projection" >
+                        <div class="projectionImage">
+                            <img src="./assets/exp.png" alt="Anlatım">
+                        </div>
+                    </div>
+                    <div class="table">
+                        <img id="img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id=img5 src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s16" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Eğitim sürecinde ağırlıklar en doğru sonuca yaklaşmak için sürekli değişiyor. Bazen sadece ağırlıklar da yeterli olmuyor ve burada sapma değerleri söz konusu oluyor. Sonucun doğru şekilde çıkması için bazı nöronlar üzerine gelen veriye sapma değerleri ekleyebiliyor.  Bu değerlerin uygun sonuçlar verebilmesi eğitim sürecinde sahip olduğum verilere bağlıdır. 
+                        </p>
+                    </div>
+                </section> 
+                <section data-background-iframe="https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=1&seed=0.82172&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=regression&initZero=false&hideText=false">
+                    <h2>Öğrendiklerini Test Etmek için Oyun Alanı</h2>
+                </section>                
+            </section>
+
+            <section>
+                <section data-background-transition="slide" data-background="./assets/mat.gif">
+                    <h2 style="color: white;"><b>Aktivasyon Fonksiyonları</b></h2>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="hmm" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="curious" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg1.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s17" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Yapay sinir ağlarının yapısını oluşturan nöron ve ağırlıklarını öğrendik. Peki bu ağın içinde gerçekleşen işlemlere biraz daha yakından bakmaya ne dersin? 
+                        </p>
+                    </div>
+                    <div id="s18" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Fonksiyon nedir?
+                            Verdiğimiz bir değeri, tanımlanmış özelliklere göre belirli işlemler uygulayarak bir sonuç veren matematiksel işlemlere fonksiyon diyoruz. Evindeki çamaşır makinesini düşünelim. Kirli çamaşırı içine attığında yıkama işlemini çalıştırarak temiz çamaşır çıkartır. Bunu günlük hayatımızdaki fonksiyonlara örnek olarak verebiliriz.                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="happy" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="smile" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg3.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s21" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Bir örnek üzerinden gidelim. 
+                            7 tane terliğimiz var. Ayak numaralarının tablo ve grafiklerini yana ekledim. Bunlar üzerinden bir tahmin yürütebilir misin?                             
+                        </p>
+                    </div>
+                    <div id="s22" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Bu verilere göre bir numara  29-33 arasında ise çocuk terliği, 36-39 arasında ise yetişkin terliğidir diyebiliriz.                             
+                        </p>
+                    </div>
+                    <div id="s23" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Harikasın! Artık bazı tahminler yapmaya hazırız!                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="happy" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="yuhoo" pose="holdingbook" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg4.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s24" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Artık kendimiz tahminler yapabiliyoruz, peki ya bunları bilgisayara nasıl öğretebiliriz? Aktivasyon fonksiyonlarından yardım alabilir miyiz sence? 
+                        </p>
+                    </div>
+                    <div id="s25" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Girdiğimiz değeri çocuk ayakkabısı veya yetişkin ayakkabısı olarak tanımlayabilecek bir fonksiyona ihtiyacımız var.                              
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="happy" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="smile" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg5.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s26" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Girdiğimiz değeri 0 veya 1 e yaklaştıran bir fonksiyona ne dersin? İki adet çıktı seçeneğini elde etmiş oluruz. Sonucumuz 0’a yakınsa çocuk terliği, 1’e yakınsa yetişkin terliği olarak sınıflandırabiliriz.                             
+                        </p>
+                    </div>
+                    <div id="s27" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Bu harika! Bu fonksiyonun adı ne?                             
+                        </p>
+                    </div>
+                    <div id="s28" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Sigmoid’e merhaba de!                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="excited" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="yuhoo" pose="yuhoo" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg6.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s29" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Sigmoid kıvrımlı grafiği sayesinde sonuca yavaş yavaş yaklaştırıp kesin zıplamaları önlemiş oluyor. Ancak bunun bir negatif getirisi olarak, 0 veya 1’e çok yakın olan değerlerde öğrenme süreci yavaşlamış oluyor. Yanda sigmoid fonksiyonunun bu problemimizde bize nasıl yardımcı olduğunun basit bir çizimini görüyoruz. 
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="happy" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="smile" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg7.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s30" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Bu harika! Başka aktivasyon fonksiyonlarından da örnek verebilir misin?                             
+                        </p>
+                    </div>
+                    <div id="s31" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Tabii ki. Az önceki ev - metrekare problemi için kullandığımız metoda lineer fonksiyon diyoruz. Bu da aslında bir aktivasyon fonksiyonu türü, ama her zaman kullanışlı olmuyor. Gelen inputları ağırlık değerleri ile çarparak çıktı oluşturan bu fonksiyon, optimum bir değere sahip olmaması sebebiyle backpropagation kavramını tamamen ortadan kaldırıyor.                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="hmm" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="hmm" pose="thinkinghmm" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/aktivasyon_fonk.png" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s32" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Piko: AI çalışmalarında kullanılan birçok aktivasyon fonksiyonu var. Şimdiye kadar sigmoid ve lineer fonksiyonlar üzerine konuştuk. Şimdi diğer en sık kullanılanlar diyebileceğimiz ReLU ve Tanh’ı öğrenelim.                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="hmm" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="hmm" pose="handsonhip" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg8.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s33" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">ReLU(Rectified Linear Unit), hangi aktivasyon fonksiyonunu kullanacağımızı bilmediğimizde kullanabileceğimiz en temel aktivasyon fonksiyonlarından biri. Yandaki grafikte de görebildiğin gibi, sıfırdan küçük değerler için her zaman 0, pozitif değerler için ise lineer bir çıktı üretiyor.                             
+                        </p>
+                    </div>
+                    <div id="s34" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary"> Bu negatif değerler için öğrenmeyi gerçekleştiremediği anlamına gelmez mi?                             
+                        </p>
+                    </div>
+                    <div id="s35" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Tam olarak öyle. Buna literatürde “Dying ReLU” problemi diyoruz. Bu yüzden ReLU, aynı lineer fonksiyonda olduğu gibi detaylı ve karmaşık verilerle çalışılırken çok doğru sonuçlar üretemiyor.                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="hmm" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="hmm" pose="handsonhip" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg9.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s36" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Bu saydığımız fonksiyonlarda yapay sinir ağı modellemelerinde en çok karşımıza çıkan tanh fonksiyonudur.                              
+                        </p>
+                    </div>
+                    <div id="s37" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary"> Tanh’ın grafiği bana Sigmoid’i anımsattı. İkisinin arasındaki farkı açıklayabilir misin?                             
+                        </p>
+                    </div>
+                    <div id="s38" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Harika bir noktaya değindin Alberto! Aslında tanh, 0 merkezli bir sigmoid fonksiyonudur. Denklemlerini aşağıdaki gibi eşitleyebiliriz:                            <b>tanh(x) = 2 * sigmoid(2x) - 1</b>                             
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemDeskActivation">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="happy" pose="sittingatdesk" width="500" height="600"></g>
+                    </div>
+                    <div class="beanDeskActivation">
+                        <g class="comicgen" name="bean" angle="straight" emotion="smile" pose="handsonhip" width="125" height="150"></g>
+                    </div>
+                    <div class="tableActivation">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="pikoActivation">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div class="activationImage">
+                        <img src="./assets/actimg9.PNG" alt="Aktivasyon Fonksiyonları">
+                    </div>
+                    <div id="s39" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Peki ya kullanacağımız alanları nasıl ayıracağız?                             
+                        </p>
+                    </div>
+                    <div id="s40" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Sigmoid 0 ile 1 arasında değer üreten problemlerde kullanılabilir. Tanh fonksiyonu ise negatif çıktı içeren problemlerin de çözümünde kullanılabilir diye özetleyebiliriz.                             
+                        </p>
+                    </div>
+                </section>    
+            </section>
+            <section>
+                <section data-background-transition="slide" data-background="./assets/proscons.gif">
+                    <h2 style="color: orange;">Acısıyla Tatlısıyla Yapay Zeka</h2>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemPros">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="blush" pose="sittingonbeanbagholdinglaptop" width="500" height="600"></g>
+                    </div>
+                    <div class="beanPros">
+                        <g class="comicgen" name="bean" angle="straight" emotion="curious" pose="holdinglaptop" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s41" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary">Yapay zeka harika! Bu alanda nasıl kendimi geliştirebilirim?                              
+                        </p>
+                    </div>
+                    <div id="s42" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary"> Yapay zeka için verilerin öneminden bahsetmiştik. Sen de veri bilimi ile ilgilenebilirsin. Veriler tarih ilerledikçe hızla artmakta. Bu artışın genel nedeni endüstri ve internet. Üretimin kolaylaşması ve paylaşımın artması ile üretilen veride artıyor.                             
+                        </p>
+                    </div>
+                    <div id="s43" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Veriler arttıkça daha karmaşık hale geliyor. Devlet arşivleri, internet vb. Sağlayıcılardan elde ettiğimiz veriyi işlemekse zorlaşıyor. Bu yüzden yeni bir meslek bile oluştu “Veri Bilimci”. Önceki durumlardan da öğrendiğimiz gibi iyi bir yapay zeka eğitmek için bolca veriye ihtiyacımız vardı. Fakat bu verilerin doğruluğu ve alakası da çok önemlidir.                          
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemPros">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="laugh" pose="sittingonbeanbagholdinglaptop" width="500" height="600"></g>
+                    </div>
+                    <div class="beanPros">
+                        <g class="comicgen" name="bean" angle="straight" emotion="worried" pose="pointingup" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s44" class="box box2">
+                        <div class="evenboxinner"> Çekirdek</div>
+                        <p class="sPrimary">Benim hangi verilerimi topluyorlar, beni kaçıracaklar mı?!                              
+                        </p>
+                    </div>
+                    <div id="s45" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary"> Burada çok büyük bir alan mevcut. Sokaklardaki kamerelardan hareketliliğimiz, duygusal durumumuz gibi veriler toplanabiliyor. Ya da kullandığımız akıllı saat veya bileklikler ile kalp atışımızdan gün içindeki adım sayımıza kadar erişilebiliyor.                              
+                        </p>
+                    </div>
+                    <div id="s46" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Zaten hepimizin bildiği sosyal medya araçlarıysa adımızdan nelerden hoşlandığımıza kadar biliyor. Ben bile sizi daha iyi anlamak için konuşmalarımızı kayderek kendimi geliştiriyorum.                          
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemPros">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="angry" pose="sittingonbeanbagholdinglaptop" width="500" height="600"></g>
+                    </div>
+                    <div class="beanPros">
+                        <g class="comicgen" name="bean" angle="straight" emotion="worried" pose="handsfolded" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s47" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary"> NEEE! Dinleniyor muyuz?                              
+                        </p>
+                    </div>
+                    <div id="s48" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Hmm...dinlenildiğini söylemek pek de yanlış olmaz Meryem. Her ne kadar dediğin her kelimeyi karşı tarafta dinleyen bir insan olmasa da ; mikrofon kullanımına izin verdiğin bir uygulamayı açtığında, yapay zeka ve çeşitli algoritmalar, izlediğin tv kanalını ses sinyallerinden analiz ediyor ve karşına izlediğin showlara göre reklam çıkarıyor.                          
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemPros">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="ooh" pose="sittingonbeanbagholdinglaptop" width="500" height="600"></g>
+                    </div>
+                    <div class="beanPros">
+                        <g class="comicgen" name="bean" angle="straight" emotion="curious" pose="handsfolded" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s49" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary"> AAAA, bunlardan nasıl korunabilirim?                              
+                        </p>
+                    </div>
+                    <div id="s50" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Belki telefonunu evde bırakıp, ıssız bir adaya göç edersen korunabilirsin Meryem.                          
+                        </p>
+                    </div>
+                    <div id="s51" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary"> Oh, en azından telefon dışında bir tehlikem yok.                             
+                        </p>
+                    </div>
+                    <div id="s52" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">O kadar emin olma Meryem. Verileriniz sadece telefonlarınızdan toplanılmıyor.                          
+                        </p>
+                    </div>
+                </section>
+                <section data-background="#e8eaf6">
+                    <div class="meryemPros">
+                        <g class="comicgen" name="priyanuova" angle="sitting" emotion="sad" pose="sittingonbeanbagholdinglaptop" width="500" height="600"></g>
+                    </div>
+                    <div class="beanPros">
+                        <g class="comicgen" name="bean" angle="straight" emotion="shocked" pose="angryfrustrated" width="125" height="150"></g>
+                    </div>
+                    <div class="table">
+                        <img id= "img4" src="./assets/table.png" alt="table">
+                    </div>
+                    <div class="piko">
+                        <img id= "img5" src="./assets/alexa.png" alt="piko">
+                    </div>
+                    <div id="s53" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary"> Belki telefonun olmayabilir, fakat her gün dolaşmak için gittiğin parktan, arkadaşlarınla buluştuğun alışveriş merkezinin önünden, eve gelmek için kullandığın yola kadar hepsini biliyorlar Meryem.                              
+                        </p>
+                    </div>
+                    <div id="s54" class="box box2">
+                        <div class="evenboxinner"> Meryem</div>
+                        <p class="sPrimary"> Sokaktaki kameralardan mı Piko?                              
+                        </p>
+                    </div>
+                    <div id="s55" class="box box2">
+                        <div class="evenboxinner"> Piko</div>
+                        <p class="sPrimary">Aynen öyle. Fakat datanın nasıl toplandığından önemli olarak neden toplandığını sormakta fayda var. Kameralar, devlet güvencesinde sağlık ve güvenlik amaçlarıyla kullanılmaktadır.                          
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="./libraries/reveal/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
