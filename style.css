@@ -162,6 +162,11 @@ html * {
     left: 692px;
     top: 380px;
 }
+.pikoSolo{
+    position: absolute;
+    right: -240px;
+    top: 373px;
+}
 .pikoActivation{
     position: absolute;
     left: 480px;
@@ -397,3 +402,201 @@ html * {
     left: 355px;
     top: 320px;
 }
+#s56{
+    right: -112px;
+    top: 223px;
+}
+#s57{
+    left: 261px;
+    top:75px;
+}
+#s58{
+    left: 153px;
+    top: 320px;
+}
+#s59{
+    left: 22px;
+    top: 210px;
+}
+#s60{
+    left: 180px;
+    top: 210x;
+}
+#s61{
+    left: 22px;
+    top: 170px;
+}
+#s62{
+    left: 250px;
+    top: 170px;
+}
+#s63{
+    left: 480px;
+    top: 53px;
+}
+#s64{
+    left: 55px;
+    top: 120px;
+}
+#s65{
+    left: 420px;
+    top: 180px;
+}
+#s66{
+    left: 80px;
+    top: 300px;
+}
+#s67{
+    left: 690px;
+    top: 570px;
+}
+#s68{
+    left: 480px;
+    top: 260px;
+}
+#s69{
+    left: 690px;
+    top: 32px;
+}
+#s70{
+    left: 690px;
+    top:150px;
+}
+#s71{
+    left: 600px;
+    top:50px;
+}
+#s72{
+    left: 53px;
+    top:50px;
+}
+#s73{
+    left: 420px;
+    top:53px;
+}
+#s74{
+    left: 420px;
+    top:250px;
+}
+#s75{
+    left: 15px;
+    top: 53px;
+}
+#s76{
+    left: 170spx;
+    top:150px;
+}
+#s77{
+    left: 170px;
+    top:300px;
+}
+#s78{
+    left: 170px;
+    top:220px;
+}
+#s79{
+    left: 500px;
+    top:25px;
+}
+#s80{
+    left: 420px;
+    top:25px;
+}
+
+
+
+
+.menu{
+    display: grid; 
+    grid-template-columns:350px 350px 350px;
+    grid-template-rows:307px 400px;
+    grid-template-areas: 
+    "kategori1 kategori2 kategori6"
+    "kategori3 kategori4 kategori5 ";
+
+}
+.kategori1{
+    grid-area: kategori1;
+    align-self:top ;
+}
+.kategori2{ 
+    grid-area: kategori2;
+    align-self: top;
+}
+.kategori3{ 
+    grid-area: kategori3;
+    align-self: top;
+}
+.kategori4{ 
+    grid-area: kategori4;
+    align-self: top;
+}
+.kategori5{ 
+    grid-area: kategori5;
+    align-self: top;
+}
+.kategori6{
+    grid-area: kategori6;
+    align-self: top;
+}
+
+li{
+    font-size: 18px;
+    list-style-type: none;
+    color: cadetblue;
+    text-align: center;
+    margin: 3px;
+}
+.reveal h3{
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+.reveal ul{
+    margin: 5px;
+    padding:7px;
+    align-self: center;
+}
+.reveal a {
+    display: inline-block;
+    width: 275px;
+    color: rgb(1, 46, 1);
+    text-decoration: none;
+    transition: color .15s ease;
+    background-color: white;
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+    border-color:rgb(190, 190, 231);
+    border-style: solid;
+    border-radius:3px ;
+}
+.reveal h2 {
+    font-size: 2.11em;
+    color: green;
+    font-size:48px;
+    margin:0px;
+    padding: 0px;
+}
+.tanitim{
+    padding: 0px;
+}
+.baslık{
+    position: relative;
+    left:50px;
+}
+.back{
+    display: inline-block;
+    position: absolute;
+    left: -246px;
+    top: -8px;
+}
+#menu1{
+    top:-68px;
+}
+.flash{
+    position: absolute;
+    left: -185px;
+    top: 58px;
+}
+
