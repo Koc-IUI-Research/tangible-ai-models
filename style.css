@@ -125,8 +125,8 @@ html * {
 .box{
     display: inline-block;
     position: absolute;
-    max width:250px;
-    max height:250px;
+    max-width:250px;
+    max-height:250px;
     background:#fff;
     border: solid black;
     border-color: black;
