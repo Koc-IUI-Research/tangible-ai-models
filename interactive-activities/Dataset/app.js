@@ -15,7 +15,7 @@ window.onload = function() {
             }]
         },
         options: {
-            responsive: false,  
+            responsive: true,  
             scales: {
                 yAxes: [{
                     ticks: {

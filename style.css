@@ -508,11 +508,11 @@ html * {
 
 .menu{
     display: grid; 
-    grid-template-columns:350px 350px 350px;
+    grid-template-columns:350px 350px 350px 350px;
     grid-template-rows:307px 400px;
     grid-template-areas: 
-    "kategori1 kategori2 kategori6"
-    "kategori3 kategori4 kategori5 ";
+    "kategori1 kategori2 kategori3 ."
+    " kategori4 kategori5 . .";
 
 }
 .kategori1{
@@ -596,7 +596,13 @@ li{
 }
 .flash{
     position: absolute;
-    left: -185px;
+    left: 185px;
     top: 58px;
 }
-
+.dataImage{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: -199px;
+    top: 137px;
+}
