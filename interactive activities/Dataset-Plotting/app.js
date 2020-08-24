@@ -1,22 +1,20 @@
 window.onload = function() {
-    DataX = [100,120,140,160,180,200,220,240,260,280,300];
-    DataY = [];
+    Labels = [100,120,140,160,180,200,220,240,260,280,300];
     Data = [{ x: 130, y: 325000 }, { x: 110, y: 286000 }, { x: 180, y: 468000 }, { x: 140, y: 294000 }, { x: 260, y: 624000 }, { x: 150, y: 405000 }, { x: 280, y: 644000 }, { x: 140, y: 364000 }, { x: 260, y: 520000 }, { x: 170, y: 340000 }, { x: 140, y: 294000 }, { x: 200, y: 460000 }, { x: 300, y: 870000 }, { x: 190, y: 475000 }, { x: 110, y: 319000 }, { x: 240, y: 504000 }, { x: 190, y: 551000 }, { x: 260, y: 754000 }, { x: 250, y: 700000 }, { x: 300, y: 660000 }, { x: 220, y: 484000 }, { x: 140, y: 322000 }, { x: 290, y: 638000 }, { x: 120, y: 276000 }, { x: 110, y: 253000 }, { x: 260, y: 754000 }, { x: 210, y: 441000 }, { x: 130, y: 377000 }, { x: 140, y: 294000 }, { x: 120, y: 288000 }, { x: 290, y: 580000 }, { x: 150, y: 330000 }, { x: 300, y: 870000 }, { x: 160, y: 448000 }, { x: 300, y: 870000 }, { x: 180, y: 432000 }, { x: 230, y: 552000 }, { x: 120, y: 240000 }, { x: 140, y: 364000 }, { x: 120, y: 324000 }, { x: 270, y: 675000 }, { x: 300, y: 690000 }, { x: 230, y: 575000 }, { x: 270, y: 756000 }, { x: 290, y: 580000 }, { x: 120, y: 348000 }, { x: 150, y: 360000 }, { x: 290, y: 812000 }, { x: 130, y: 260000 }];
     var ctx = document.getElementById('myChart');
+    DataY = [];
     var myChart = new Chart(ctx, {
-        type:'bar',
+        type: 'scatter',
         data: {
+            labels: Labels,
             datasets: [{
-                type: 'line',
                 data: DataY,
+                borderWidth: 1,
+                type: 'line',
+                label: "Grafiğin",
                 fill: false,
-                borderWidth: 5,
-                order: 1,
-                pointBorderWith: 2,
-                pointerBorderColor: "#8e5ea2",
-                borderColor: "#8e5ea2",
-                label: "Girdi",
-
+                borderColor: "#3b6072",
+                backgroundColor: "#3b6072"
             },{
                 type: 'scatter',
                 data: Data,
@@ -26,27 +24,31 @@ window.onload = function() {
                 fill: true,
                 borderColor: "rgb(0,0,0)",
                 backgroundColor: "rgb(0,0,0)"
-            }],
-
+            }]
         },
         options: {
             responsive: false,  
             scales: {
                 yAxes: [{
-                    stacked: true
+                    ticks: {
+                        beginAtZero: true
+                    }
                 }],
-                xAxes:[{
+                xAxes: [{
                     type: 'linear',
-                }] 
+                    position: 'bottom'
+                }]
             }
         }
     }); 
 
 const equation = document.getElementById("eq");
 const arrow = document.getElementById("enter");
+const text = document.getElementById("text");
 const body = document.body;
 const default_color = "rgb(183,180,198)";
 const red = "rgb(183,62,62)";
+const vic = "rgb(120,229,114)";
 let input = "";
 convertedInput = [];
 myChart.update();
@@ -61,14 +63,19 @@ function Input() {
     if(checkInput()){
         DataY = [];
         body.style.backgroundColor = default_color;
-        for(let i = 0;i<Data.length;i++){
-            DataY[i] = convertedInput[0] * Data[i].x;
+        for(let i = 0;i<Labels.length;i++){
+            DataY[i] = convertedInput[0] * Labels[i];
             if(convertedInput[1]) DataY[i] += convertedInput[2];
             else DataY[i] -= convertedInput[2];
-            console.log(DataY[i]);
         }
+        DataY.sort(function(a, b){return a-b});
         myChart.data.datasets[0].data = DataY;
         myChart.update();
+        console.log(convertedInput);
+        if(Math.trunc(convertedInput[0]) == 2500 && Math.trunc(convertedInput[1]) == 0 && Math.trunc(convertedInput[2]) == 15000){
+            body.style.backgroundColor = vic;
+            text.innerText = "Tebrikler, doğru cevapladın";
+        }
     }
     else{
         body.style.backgroundColor = red;
