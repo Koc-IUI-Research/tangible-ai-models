@@ -15,15 +15,6 @@ html * {
     max-width: 500px;
     max-height: 700px;
 }
-#img4{
-    width: 256px;
-    height: 256px;
-}
-#img5{
-    width: 125px;
-    height: 125px;
-}
-
 .container{
     display:flex;
 }
@@ -97,12 +88,12 @@ html * {
     left: -58px;
 }
 .projectionImage{
-    width:300px ;
-    height: 160px;
+    width: 500px;
+    height: 200px;
     position: relative;
     display: inline-block;
-    top: -401px;
-    left: -10px;
+    top: -425px;
+    left: -18px;
 }
 .beanDesk{
     top: 372px;
@@ -151,26 +142,36 @@ html * {
     position: absolute;
     left: 678px;
     top: 460px;
+    width: 256px;
+    height: 256px;
 }
 .tableActivation{
     position: absolute;
     left: 350px;
     top: 460px;
+    width: 256px;
+    height: 256px;
 }
 .piko{
     position: absolute;
     left: 692px;
-    top: 380px;
+    top: 383px;
+    width: 125px;
+    height: 125px;
 }
 .pikoSolo{
     position: absolute;
-    right: -240px;
-    top: 373px;
+    right: -294px;
+    top: 372px;
+    width: 250px;
+    height: 250px;
 }
 .pikoActivation{
     position: absolute;
     left: 480px;
     top: 380px;
+    width: 125px;
+    height: 125px;
 }
 .sPrimary{
     font-size: 16px;
@@ -407,112 +408,232 @@ html * {
     top: 223px;
 }
 #s57{
-    left: 261px;
-    top:75px;
+    left: 213px;
+    top: 208px;
 }
 #s58{
-    left: 153px;
-    top: 320px;
+    left: 148px;
+    top: 356px;
 }
 #s59{
-    left: 22px;
-    top: 210px;
+    left: -41px;
+    top: 94px;
 }
 #s60{
-    left: 180px;
-    top: 210x;
+    left: 238px;
+    top: 183px;
 }
 #s61{
-    left: 22px;
-    top: 170px;
+    left: 142px;
+    top: 332px;
 }
 #s62{
     left: 250px;
-    top: 170px;
+    top: 90px;
 }
 #s63{
-    left: 480px;
-    top: 53px;
+    left: 151px;
+    top: 302px;
 }
 #s64{
-    left: 55px;
-    top: 120px;
+    left: 164px;
+    top: 237px;
 }
 #s65{
-    left: 420px;
-    top: 180px;
+    left: 727px;
+    top: 256px;
 }
 #s66{
-    left: 80px;
-    top: 300px;
+    left: 8px;
+    top: 148px;
 }
 #s67{
-    left: 690px;
-    top: 570px;
+    left: 158px;
+    top: 325px;
 }
 #s68{
-    left: 480px;
-    top: 260px;
+    left: 661px;
+    top: 413px;
 }
 #s69{
-    left: 690px;
-    top: 32px;
+    left: 147px;
+    top: 186px;
 }
 #s70{
-    left: 690px;
-    top:150px;
+    left: 147px;
+    top: 290px;
 }
 #s71{
-    left: 600px;
-    top:50px;
+    left: 14px;
+    top: 230px;
 }
 #s72{
-    left: 53px;
-    top:50px;
+    left: 150px;
+    top: 320px;
 }
 #s73{
-    left: 420px;
-    top:53px;
+    left: 359px;
+    top: 172px;
 }
 #s74{
-    left: 420px;
-    top:250px;
+    left: 735px;
+    top: 113px;
 }
 #s75{
-    left: 15px;
-    top: 53px;
+    left: 352px;
+    top: 167px;
 }
 #s76{
-    left: 170spx;
-    top:150px;
+    left: 735px;
+    top: 113px;
 }
 #s77{
-    left: 170px;
-    top:300px;
+    left: 793px;
+    top: 268px;
 }
 #s78{
-    left: 170px;
-    top:220px;
+    left: 367px;
+    top: 345px;
 }
 #s79{
-    left: 500px;
-    top:25px;
+    left: 171px;
+    top: 97px;
 }
 #s80{
-    left: 420px;
-    top:25px;
+    left: 367px;
+    top: 250px;
 }
-
-
-
-
+#s81{
+    left: 361px;
+    top: 250px;
+}
+#s82{
+    left: 27px;
+    top: 209px;
+}
+#s83{
+    left: 144px;
+    top: 351px;
+}
+#s84{
+    left: 18px;
+    top: 166px;
+}
+#s85{
+    left: 154px;
+    top: 292px;
+}
+#s86{
+    left: -15px;
+    top: 60px;
+}
+#s87{
+    left: 220px;
+    top: 190px;
+}
+#s88{
+    left: 153px;
+    top: 362px;
+}
+#s89{
+    left: 7px;
+    top: 85px;
+}
+#s90{
+    left: 265px;
+    top: 220px;
+}
+#s91{
+    left: 120px;
+    top: 364px;
+}
+#s92{
+    left: 660px;
+    top: 340px;
+}
+#s93{
+    left: 400px;
+    top: 50px;
+}
+#s94{
+    left: 245px;
+    top: 260px;
+}
+#s95{
+    left: 370px;
+    top: 362px;
+}
+#s96{
+    left: 661px;
+    top: 413px;
+}
+#s97{
+    left: -179px;
+    top: 56px;
+}
+#s98{
+    left: 233px;
+    top: 275px;
+}
+#s99{
+    left: 124px;
+    top: 371px;
+}
+#s100{
+    left: 186px;
+    top: 70px;
+}
+#s101{
+    left: -5px;
+    top: 189px;
+}
+#s102{
+    left: 793px;
+    top: 268px;
+}
+#s103{
+    left: 34px;
+    top: 230px;
+}
+#s104{
+    left: 160px;
+    top: 338px;
+}
+#s105{
+    left: 120px;
+    top: 364px;
+}
+#s106{
+    left: 55px;
+    top: 86px;
+}
+#s107{
+    left: 428px;
+    top: 183px;
+}
+#s108{
+    left: 366px;
+    top: 366px;
+}
+#s109{
+    left: 34px;
+    top: 195px;
+}
+#s110{
+    left: 152px;
+    top: 327px;
+}
+#s111{
+    left: 775px;
+    top: 312px;
+}
 .menu{
     display: grid; 
-    grid-template-columns:350px 350px 350px 350px;
+    grid-template-columns:350px 350px 350px;
     grid-template-rows:307px 400px;
     grid-template-areas: 
-    "kategori1 kategori2 kategori3 ."
-    " kategori4 kategori5 . .";
+    "kategori1 kategori2 kategori3"
+    "kategori4 kategori5 kategori6";
 
 }
 .kategori1{
@@ -600,9 +721,15 @@ li{
     top: 58px;
 }
 .dataImage{
-    width: 600px;
-    height: 600px;
     position: absolute;
-    right: -199px;
-    top: 137px;
+    right: -260px;
+    top: 60px;
+}
+.pikoLeft{
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    right: -246px;
+    top: 445px;
+
 }
